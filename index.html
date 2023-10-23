@@ -1,79 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-
+ 
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <meta charset="UTF-8">
+    '<title>Fasasi J. Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-</head>
+    <meta name="description" content="Backend/Blockchain developer portfolio designed by fasasi for jaytechent">   
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        
+</head> 
+
+
+<!--the head end here-->
+
 
 <body>
-    <header>
-        <h1>Fasasi J.O</h1>
-        <p>Web Developer | Graphic Designer | Blockchain Enthusiast</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!--This is a home section-->
-    <section id="home">
+    <!--header start here-->
 
-        <h2>Home</h2>
-        <p>I am a exprienced web developer with 3 years of exprience and a student of gomycode fullstack javascript
-            student.</p>
-    </section>
+    <header class="header">
+      <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="https://portfolio-jaytechent.vercel.app/assets/images/profile.png" alt="Fasasi" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Fasasi j. Olamilekan </h1>
+                <h2 class="desc">Blockchain/Backend Dev</h2></div>
+                </div>
+<!--end of div container-->
+                <nav id="nav-bar">
+                <ul class="nav-item">  
 
-    <!--This is about me section-->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="data:image/jpeg;base64,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"
-            alt="sultan">
-        <p>I am a exprienced web developer with 3 years of exprience and a student of gomycode fullstack javascript
-            student.</p>
+                    <li><a href="#Latest-project">LATEST PROJECT</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Other -project">OTHER PROJECT</a></li>  
+                    <li><a href="#Work-exprience">WORK EXPRIENCE</a></li>   
+                    <li><a href="#Skill">SKILLS</a></li> 
+                    <li><a href="#Testimonial">TESTINMONIALS</a></li> 
+                    <li><a href="#Edu">EDUCATION</a></li> 
+                    <li><a href="#Language">LANGUAGES</a></li> 
+                    <li><a href="#Coding-music">CODING MUSIC</a></li> 
+                    <li><a href="#Contact">CONTACT</a></li>  
+                </ul> 
+        
+    </header><!--//header end here-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section id="About">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I am a self taught blockchain and backend developer with indept knowledge of the solidity programming language and I also do alot around the main programmig language and frameworks.I have work with react library and also develop a charity donation web3 app .</p>    
+         
+        <p> Energetic and dedicated Blockchain Developer with hands-on experience in designing, developing, and
+            implementing blockchain solutions.
+             Proficient in smart contract development, DApp creation and blockchain architecture.
+             Strong foundation in programming skills and a deep understanding of blockchain technologies.
+            Adept at collaborating with cross-functional teams to deliver innovative and efficient blockchain
+            solution.
+            </p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="Latest-project">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-left">
+                                <h3 class="title"><a href="https://hybrid-test2.vercel.app/"target="_blank">DONATION WEB APP</a></h3>
+                                <p class="summary">A web3 app for collecting algorand based token integrated with multisignature wallets for the purpose of donation</p>
+                                <div class="featured-image">
+                                    <img class="img" src="https://portfolio-jaytechent.vercel.app/assets/images/%20projects/project-1.png" alt="project name" />
+                                    </a>
+                                    
+                                        <div class="text">New</div>
+                                        </div>
+                                    
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>This web3 app was designed for donation collection for hybridswap community in other to recieve tokens from any one who is interested in their project. The contract was deployed on algorand chain, the smart contract were majorly in teals language and the Pipeline framework was used for wallet integration.</p>
+                                    
+                              
+                                           <p><a class="more-link" href="https://hybrid-test2.vercel.app/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>               
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://portfolio-jaytechent.vercel.app/assets/images/%20projects/project-5.png" target="_blank">
+                                <img class="img" src="https://portfolio-jaytechent.vercel.app/assets/images/%20projects/project-5.png" alt="project name" />
+                                </a>
 
-    </section>
-    <!--This is about me section-->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>I am a exprienced web developer with 3 years of exprience and a student of gomycode fullstack javascript
-            student.</p>
-    </section>
-    <section>
-
-
-        <!--This is my work section-->
-        <section id="work">
-            <h2>Work</h2>
-            <p>I am a exprienced web developer with 3 years of exprience and a student of gomycode fullstack javascript
-                student.</p>
-        </section>
-
-
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="process_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="2" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-        <footer>
-            <p>&copy; 2023 fasasi@ymail.com</p>
-        </footer>
+                                <div class="desc text-left">    
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://multi-sender-bsc-jay.vercel.app" target="_blank">MULTI-SENDER WEB3 APP FOR AIRDROPS</a></h3>
+                                    <p>This app is designed to send out multiple transanction in a single tranch to diffferent account at the same time,just like the bulk message sender and it can easily load a csv file and send the transactions to all the acccounts in a single click.</p>
+                                    <p><a class="more-link" href="http://multi-sender-bsc-jay.vercel.app" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+<hr/>                            
+                            
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://portfolio-jaytechent.vercel.app/assets/images/%20projects/project-featured.png" target="_blank">
+                                 <img class="img" src="https://portfolio-jaytechent.vercel.app/assets/images/%20projects/project-featured.png" alt="project name" /></a>
+                                <div class="desc text-left">    
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://schedule-inspection-timer.netlify.app" target="_blank">FLIGHT HOUR RECORDER/ALARM WEB APP</a></h3>
+                                    <p>The web app records flight hours when the aircrafts start flying and sound alarm whem ever the Aircraft hours remains 5-hours to the next schedule inspection.</p>
+                                    <p><a class="more-link" href="https://schedule-inspection-timer.netlify.app/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section id="Other-project">
+                    <div class="section-inner">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://surge-token.surge.sh/">A sample web3 startup website project</a></h3>
+                                <p class="summary">The sample web3 has a blockchain scan integrated to confirm its correct token address and a redirect from the website to a decentralized exchange</p>
+                                <p><a class="more-link" href="http://surge-token.surge.sh"target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                            </div><!--//item-->.
+                            
+                            <div class="item">
+                                <h3 class="title"><a href="Algorand-donation-app3">Algorand Donation app</a></h3>
+                                <p class="summary"> The web app recieved donation of algorand token alone through the algorand wallet and by connecting the wallet to the web app ac ultrices sed.</p>
+                                <p><a class="more-link" href="https://hybrid-test2.vercel.app/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                            </div><!--//item-->
+                            
+                    
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section id="Work-exprience">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Lead Developer - <span class="place"><a href="www.hybridwap.live">HYBRIDSWAP DEX</a></span> <span class="year">(2021 - 2022)</span></h3>
+                                <p>I was responsible for majorly the backend job, I was in charge of writing and also deploying the project smart contract on the blockhain. I contributed immensely to the security and auditing of the smart contract. I wrote the smart contract for the governing token and deploy same to the algorand mainnet chain.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Blockchain Engineer - <span class="place"><a href="Onubia.com">Onubia</a></span> <span class="year">(Jan 2020 - Mar 2020)</span></h3>
+                                <p>I intrgrated a multi-signature blockchain wallet to an existing e-commerce website using pipeline-express framework.</p>
+                            </div><!--//item-->
+                            
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+        
+            <section id="Contact">
+            <div  
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><span class="sr-only">Location:</span>Port Harcourt, Nigeria</li>
+                                <li><span class="sr-only">Email:</span><a href="#">fasasiolamilekan35@gmail.com</a></li>
+                                <li><span class="sr-only">Website:</span><a href="https://portfolio-jaytechent.vercel.app/">http://www.jaytechent.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section>
+                
+                <aside id="Skill">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                I am a web developer with hands-on exprienece in the following framework and programming languages.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Solidity &amp; Remix<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3 &amp; LESS<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Python,Node.js,Teals <span class="level-label">Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="54%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                        
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside id="Testimonials">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p>Fasasi is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p> </blockquote>                
+                                <p class="source"><span class="name">Julien Cisse</span><br /><span class="title">Pomero Donation</span></p>                                                             
+                            </div><!--//item-->
+                            
+                            <p><a class="more-link" href="https://www.upwork.com/freelancers/~0128e4d43ce1ad1755"><i class="fa fa-external-link"></i> More on Upwork</a></p> 
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside id="Edu">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                                                  
+                                                
+                            <div class="item">
+                                <h3 class="title"> BSc Computer Science</h3>
+                                <h4 class="university">Ladoke Akintola University of Technology,Ogbomosho (LAUTECH) <span class="year">(2019-2021)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside id="Language">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Professional <br class="visible-xs"/>  </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Yoruba:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"/></span>
+                                </li><!--//item-->
+                            </ul>
+                  
+                </aside><!--//section-->
+                
+              
+                
+                <aside id="Coding-music">
+                    <div class="section-inner">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Raggae</a></li>
+                                <li><a href="#">Barrister</a></li>
+                                <li><a href="#">Asa</a></li>
+                                <li> <a href="#">fela</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                <!--//section-->
+                
+                
+                            
+                        
+                
+                        <section>
+                            <div class="follow">
+                                <div>
+                            <a  href="https://twitter.com/Geninfotechent" target="_blank">Follow me</a>
+                        </div>  <a  href="http://youtube.com/@jaytechent" target="_blank">Subscribe To My Channel</a>
+                        </div><!--//content-->
+                    
+                </section>
+                <!--//section-->
+              
+            </div><!--//secondary-->    
+        </div>
+    </div>
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+               
+                <small class="copyright">Designed  by Fasasi J for Jaytechent</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    
 </body>
-
-</html>
+</html> 
